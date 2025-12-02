@@ -1,0 +1,38 @@
+
+{
+  "lang": "vi-VN",
+  "couple": {
+    "bride_name": "Tên Cô Dâu",
+    "groom_name": "Tên Chú Rể"
+  },
+  "date": "2026-01-10",
+  "time": "17:30",
+  "invite_text": "Kính mời Quý Anh/Chị/Bạn đến chung vui cùng chúng tôi trong ngày trọng đại.",
+  "venue": {
+    "name": "Nhà hàng Tiệc Cưới Ánh Dương",
+    "address": "123 Đường Hoa, Quận 1, TP.HCM",
+    "map_url": "https://www.google.com/maps/place/10.776,106.700"
+  },
+  "schedule": [
+    { "time": "16:30", "title": "Đón khách" },
+    { "time": "17:30", "title": "Lễ thành hôn" },
+    { "time": "18:00", "title": "Khai tiệc & văn nghệ" }
+  ],
+  "gallery": [
+    "assets/photo1.jpg",
+    "assets/photo2.jpg",
+    "assets/photo3.jpg"
+  ],
+  "rsvp": {
+    "method": "mailto",
+    "mailto": "example@email.com",
+    "phone": "+84-90-000-0000"
+  },
+  "theme": {
+    "primary_color": "#C59D7C",
+    "background": "#FFF5EC",
+    "font_heading": "'Playfair Display', serif",
+    "font_body": "'Inter', sans-serif"
+  },
+  "hosted_by": "Gia đình hai bên"
+}
