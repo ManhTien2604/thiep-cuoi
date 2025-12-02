@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thiệp cưới | {{couple_names}}</title>
+  <meta name="description" content="Thiệp cưới online dễ tuỳ chỉnh cho cặp đôi" />
+  <meta property="og:title" content="Thiệp cưới | {{couple_names}}" />
+  <meta property="og:description" content="Kính mời bạn chung vui cùng chúng tôi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/cover.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" role="banner" aria-label="Ảnh bìa và thông tin chính">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1 id="coupleNames" class="title">Cô Dâu & Chú Rể</h1>
+      <p id="weddingDate" class="subtitle">Ngày ...</p>
+      <div class="countdown" aria-live="polite">
+        <div><span id="dd">00</span><small>Ngày</small></div>
+        <div><span id="hh">00</span><small>Giờ</small></div>
+        <div><span id="mm">00</span><small>Phút</small></div>
+        <div><span id="ss">00</span><small>Giây</small></div>
+      </div>
+      <div class="hero-actions">
+        <a id="rsvpBtn" class="btn btn-primary" href="#rsvp">Xác nhận tham dự (RSVP)</a>
+        <button id="shareBtn" class="btn btn-outline" type="button">Chia sẻ thiệp</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="about" aria-label="Giới thiệu cặp đôi">
+      <h2 class="section-title">Kính mời</h2>
+      <p id="inviteText">Kính mời Quý Anh/Chị/Bạn đến chung vui cùng chúng tôi trong ngày trọng đại.</p>
+    </section>
+
+    <section class="section alt" id="schedule" aria-label="Lịch trình sự kiện">
+      <div class="container">
+        <h2 class="section-title">Lịch trình</h2>
+        <ul class="timeline" id="timeline">
+          <!-- các mục sẽ được đổ từ config -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="venue" aria-label="Địa điểm tổ chức">
+      <h2 class="section-title">Địa điểm</h2>
+      <p id="venueName" class="venue-name">Tên địa điểm</p>
+      <p id="venueAddress" class="venue-address">Địa chỉ</p>
+      <div class="venue-actions">
+        <a id="mapLink" class="btn btn-outline" target="_blank" rel="noopener">Xem bản đồ</a>
+      </div>
+    </section>
+
+    <section class="section alt" id="gallery" aria-label="Bộ sưu tập ảnh">
+      <div class="container">
+        <h2 class="section-title">Khoảnh khắc</h2>
+        <div class="grid" id="galleryGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="rsvp" aria-label="Xác nhận tham dự">
+      <h2 class="section-title">Xác nhận tham dự (RSVP)</h2>
+      <div id="rsvpContainer">
+        <!-- tuỳ vào config sẽ hiển thị mailto, Google Form hoặc Formspree -->
+      </div>
+      <p class="note" id="hostedBy">Trân trọng kính mời.</p>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Chân trang">
+    <div class="container footer-content">
+      <small>© <span id="year"></span> Thiệp cưới của <span id="footerNames">Cô Dâu & Chú Rể</span>. Thiết kế bởi bạn.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
